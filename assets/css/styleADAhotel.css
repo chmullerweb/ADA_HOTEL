@@ -1,0 +1,264 @@
+/*CSS RESET*/
+    /* http://meyerweb.com/eric/tools/css/reset/
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	font-size: 100%;
+    	font: inherit;
+    	vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    	display: block;
+    }
+    body {
+    	line-height: 1;
+    }
+    ol, ul {
+    	list-style: none;
+    }
+    blockquote, q {
+    	quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: '';
+    	content: none;
+    }
+    table {
+    	border-collapse: collapse;
+    	border-spacing: 0;
+    }
+
+/*POLICE*/
+* {
+  color: #140D04;
+  font-family: 'times new roman';
+  font-size: 1em;
+}
+
+nav a, .text_footer a, h2, h1 {
+  font-family: 'Lobster', cursive;
+}
+
+h2{
+  font-size: 1.6em;
+}
+
+h3{
+  font-family: 'Lobster Two', cursive;
+  font-size: 1.2em;
+}
+
+/*BACKGROUND*/
+
+#bloc_page{
+  background-color: white;
+  background-repeat: repeat;
+}
+
+/*HEADER*/
+
+nav{
+  background-color:#739e82;
+  height: 30px;
+}
+
+nav li{
+  list-style: none;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0px;
+    border-bottom: 4px #E29434 solid;
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav a:hover{
+  color: white;
+}
+
+
+.cover{
+  margin-top: 10px;
+  background-image: url(../images/hotel/adahotel_1.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 780px 400px;
+  height: 400px;
+  flex-direction: column;
+}
+
+.title{
+  text-align: center;
+  width: 50%;
+  font-size: 3em;
+  font-family: 'Lobster', cursive;
+  padding-top: 110px;
+  padding-bottom: 0px;
+}
+.title h1{
+  text-shadow: 2px 0px 6px rgba(150, 150, 150, 1);
+}
+.title h2{
+  font-family: 'Lobster Two', cursive;
+  font-size: 0.6em;
+  padding-top: 25px;
+  padding-bottom: 20px;
+
+}
+
+#star img{
+  width: 30px;
+  height: 30px;
+}
+
+#star{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.button_book {
+  background-color: #E29434;
+  border: 2px;
+  border-radius: 3px;
+  color: #140D04;
+}
+
+.button_book h2{
+  text-align: center;
+  justify-content: middle;
+  padding: 4px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+
+/*AGENDA SEJOUR*/
+
+.agenda{
+  background-color: rgba(115, 158, 130, 0.4);
+  display: flex;
+  justify-content: space-around;
+  padding: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+
+input[type=date]{
+  background-color: rgba(240,234, 216);
+  text-align: right;
+}
+
+input[type=submit]{
+  background-color: #140D04;
+  text-align: center;
+  color: white;
+}
+
+
+/*SLIDER PHOTO*/
+
+.slider_photos img{
+  width: 300px;
+}
+
+.slider_photos{
+  text-align: center;
+  border: 2px #140D04 dotted;
+  border-radius: 3px;
+}
+
+/*DESCRIPTION & SERVICES*/
+
+#presentation{
+  display: flex;
+}
+
+.description{
+  width: 50%;
+  padding : 4px;
+  margin: 4px;
+  margin-left: 10px;
+}
+
+.services{
+  background-color: rgba(211, 139, 93, 0.4); 211 139 93
+  width: 50%;
+  padding: 4px;
+  margin-top: 4px;
+  border-radius: 3px;
+}
+
+/*CONTACT*/
+
+.social img{
+  width: 30px;
+  height: 30px;
+}
+
+.social li{
+  list-style: none;
+}
+
+.social {
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+  width: 10%;
+
+}
+
+/*FOOTER*/
+
+.text_footer{
+  background-color:#739e82;
+  height: 30px;
+}
+
+.text_footer li{
+  list-style: none;
+}
+
+
+
+.text_footer ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    border-top: 2px #140D04 solid;
+}
+
+.text_footer a{
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.text_footer a:hover{
+  color: #f3ffb6;
+}

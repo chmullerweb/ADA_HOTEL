@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Réservez chez ADAhotel</title>
+	</head>
+
+	<body>
+
+<!--HEADER-->
+		<header>
+				<nav id="menu">
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="chambres.html">Nos Chambres</a></li>
+						<li><a href="reservation.html">Réservation</a></li>
+						<li><a href="services.html">Nos Servives</a></li>
+						<li><a href="quartier.html">Localisation</a></li>
+						<li><a href="contact.html" target="blank">Nous Contacter</a></li>
+					</ul>
+				</nav>
+
+				<div id="title">
+					<h1>ADAhotel</h1>
+						<h2>Hôtel**** insolite et haut de gamme</h2>
+							<img src="assets/images/hotel/star.png"/>		<img src="assets/images/hotel/star.png"/>		<img src="assets/images/hotel/star.png"/> 		<img src="assets/images/hotel/star.png"/>
+				</div>
+							<img id="cover" src="assets/images/hotel/adahotel_1.jpg"/>
+
+		</header>
+
+<!--TITRE PAGE-->
+		<div class="title_page">
+			<h2>Réservez votre séjour en ligne</h2>
+		</div>
+
+<!--DESCRIPTION CHAMBRES-->
+
+<section id="room">
+
+	<h2>Nos chambres insolites et haut de gamme</h2>
+
+	<table id="room_table">
+			<thead>
+					<div id="title_table">
+							<tr>
+								<th> Chambre 1 </th>
+								<th> Chambre 2 </th>
+								<th> Chambre 3 </th>
+							</tr>
+				 </div>
+
+				 <div id="subtitle_table">
+					<tr>
+						<th> Maribelle </th>
+						<th> Elisa </th>
+						<th> Justine </th>
+					</tr>
+				</div>
+
+			</thead>
+
+			<tfoot id="footer_table">
+					<tr>
+							<td> 50€/nuit </td>
+							<td> 75€/nuit</td>
+							<td> 100€/nuit</td>
+					</tr>
+			</tfoot>
+
+			<tbody>
+				<tr>
+					<td> Lit simple </td>
+					<td> Lit double </td>
+					<td> Lit royal </td>
+			</tbody>
+
+		</table>
+</section>
+
+		<hr/>
+
+<!--INFOS RESERVATION-->
+
+<section id="infos_reservation">
+		<h2>Informations sur la réservation</h2>
+
+			<h3>Choix de votre chambre</h3>
+				<form class="" action="index.html" method="post">
+					<select class="" name="Chambres">
+						<option value="Maribelle">Maribelle</option>
+						<option value="Elisa">Elisa</option>
+						<option value="Justine">Justine</option>
+					</select><br/>
+				</form>
+
+			<h3>Dates du séjour</h3>
+				<form class="" action="index.html" method="post">
+					<label>Arrivée </label><input type="date" name="" value=""><br/>
+					<label>Départ <label><input type="date" name="" value=""><br/>
+				</form>
+
+			<h3>Nombre de Voyageurs</h3>
+
+				<form class="" action="index.html" method="post">
+					<label for="">Adultes </label><input type="number" name="" value=""><br/>
+					<label for="">Enfant de 2 à 12 ans </label><input type="number" name="" value=""><br/>
+					<label for="">Bébé -2 ans </label><input type="number" name="" value=""><br/>
+					<label for="">Animal de compagnie </label><input type="number" name="" value=""><br/>
+				</form><br/>
+
+			<h3>Services</h3>
+				<form class="" action="index.html" method="post">
+					<input type="checkbox" name="services" value="" id="breakfast"><label for="breakfast" title="Veuillez vous présenter à la réception la veille pour réserver votre petit-déjeuner.">Petit-déjeuner*</label><br/>
+					<input type="checkbox" name="services" value="" id="pool"><label for="pool">Accès Piscine </label><br/>
+					<input type="checkbox" name="services" value="" id="parking"><label for="parking">Parking </label><br/>
+					<input type="checkbox" name="services" value="" id="nursery"><label for="nursery">Garderie </label><br/>
+					<input type="checkbox" name="services" value="" id="petsitter"><label for="petsitter">Petsitter </label><br/>
+
+				</form><br/>
+
+
+</section>
+
+		<hr/>
+
+<!--INFOS PERSONNELLES-->
+
+<section id="infos_private">
+
+
+		<h2> Informations personnelles</h2>
+			<form class="" action="index.html" method="post">
+				<div id="identity">
+					<input type="text" name="" value="" placeholder="Votre Nom">
+					<input type="text" name="" value="" placeholder="Votre Prénom"><br/><br/>
+				</div>
+
+				<div id="gender">
+					<label>Vous êtes :</label>
+						<input type="radio" name="gender" value="Femme" id="woman"><label for="woman">Femme</label>
+						<input type="radio" name="gender" value="Homme" id="man"><label for="man">Homme</label><br/>
+				</div>
+		<br/>
+
+					<label>Numéro de téléphone :</label> <input type="number" name="" value=""><br/>
+					<label>Votre email :</label><input type="email" name="" value="" placeholder="contact@gmail.com"><br/><br/>
+
+					<label>Un commentaire à nous partager ? </label><br/>
+					<textarea class="formular" name="name" rows="2" cols="100">Je serais ravi(e) de séjourner chez vous !</textarea><br/>
+
+		<br/>
+
+			<div class="send_button">
+				<input type="submit" name="" value="Envoyez"><br/>
+			</div>
+
+			</form>
+
+</section>
+
+<!--FOOTER-->
+		<footer>
+				<div class="footer">
+					<ul>
+							<li>A propos</li>
+							<li>Mentions légales</li>
+							<li>© Copyrights 2020</li>
+							<li><img src="assets/images/social/facebook.png" alt="facebook_adahotel"/></li>
+							<li><img src="assets/images/social/instagram.png" alt="instagram_adahotel"/></li>
+							<li><img src="assets/images/social/twitter.png" alt="twitter_adahotel"/></li>
+					</ul>
+				</div>
+		</footer>
+
+
+<!--Brouillon
+			Joindre un fichier <input type="file" name="" value=""><br/>
+
+		</form>
+
+		<form class="" action="index.html" method="post">
+
+
+-->
+
+
+		</form>
+	</body>
+</html>
