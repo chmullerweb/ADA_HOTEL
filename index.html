@@ -3,9 +3,13 @@
 
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="assets/css/styleADAhotel.css">
-		<link href="https://fonts.googleapis.com/css?family=Lobster+Two|Lobster&display=swap" rel="stylesheet">
-		<title>ADAhotel.com</title>
+			<link rel="stylesheet" href="assets/css/styleADAhotel.css">
+				<link href="https://fonts.googleapis.com/css?family=Lobster+Two|Lobster&display=swap" rel="stylesheet">
+					<script src="https://kit.fontawesome.com/39ca2ad730.js" crossorigin="anonymous"></script>
+						<link rel="shortcut icon" href="assets/images/icones/favicon.ico" type="image/x-icon">
+						<link rel="icon" href="assets/images/icones/favicon.ico" type="image/x-icon">
+							<title>ADAhotel.com</title>
+
 
 	</head>
 
@@ -48,7 +52,8 @@
 <!--AGENDA RAPIDE RESERVATION-->
 			<div class="agenda">
 
-					<img id="calendar" src="https://image.flaticon.com/icons/svg/809/809500.svg" alt="Disponibilités Adahotel"/>
+					<i id="calendar" class="fas fa-history"></i>
+					<!--Commentaire : <img id="calendar" src="https://image.flaticon.com/icons/svg/809/809500.svg" alt="Disponibilités Adahotel"/>-->
 
 					<div class="agenda_title">
 							<h2>Dates de votre séjour</h2>
@@ -79,7 +84,7 @@
 
 			<h2>Nos services</h2>
 				<ul>
-						<li id="puce_reception"><span>Réception 24/7</span></li>
+						<li ><span>Réception 24/7</span></li>
 						<li id="puce_staff"><span>Staff multilingue</span></li>
 						<li id="puce_nursery"><span>Garderie</span></li>
 						<li id="puce_food"><span>Produits locaux</span></li>
@@ -114,32 +119,33 @@
 		<div id="find_us">
 
 				<div class="gmap_canvas">
-					<iframe width="700" height="230" id="gmap_canvas" src="https://maps.google.com/maps?q=90%20rue%20des%20couronnes&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+					<iframe width="350" height="230" id="gmap_canvas" src="https://maps.google.com/maps?q=90%20rue%20des%20couronnes&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 					</iframe>
 				</div>
-				<style>.mapouter{position:relative;text-align:right;height:230px;width:700px;}.gmap_canvas {overflow:hidden;background:none!important;height:230px;width:700px;}</style>
+				<style>.mapouter{position:relative;text-align:right;height:230px;width:350px;}.gmap_canvas {overflow:hidden;background:none!important;height:230px;width:350px;}</style>
 
-		<div id="contact">
-			<div class="hotel_infos">
+		<section id="contact">
 					<h3>Nous Contacter</h3>
 
-					<div class="address">
-						<p id="adahotel">Adahotel</p>
-						<p>90 Rue des Couronnes</p>
-						<p>75020 Paris</p>
-					</div>
+						<div id="hotel_infos">
+								<div class="address">
+									<p id="adahotel">Adahotel</p>
+									<p>90 Rue des Couronnes</p>
+									<p>75020 Paris</p>
+								</div>
 
-					<div class="number_email">
-						<p>09.76.89.88.00</p>
-						<p>contact@adahotel.com</p>
+								<div class="number_email">
+									<p><a href=”tel:0976898800”>09.76.89.88.00</a><p>
+									<p><a href=”mailto:contact@adahotel.com”>contact@adahotel.com</a><p>
 
-						<ul class="social">
-							<li><a href="#"><img src="assets/images/social/facebook.png" alt="facebook_adahotel"/></a></li>
-							<li><a href="#"><img src="assets/images/social/instagram.png" alt="instagram_adahotel"/></a></li>
-							<li><a href="#"><img src="assets/images/social/twitter.png" alt="twitter_adahotel"/></a></li>
-						</ul>
-					</div>
-		</div>
+									<ul class="social">
+										<li><a href="#"><img src="assets/images/social/facebook.png" alt="facebook_adahotel"/></a></li>
+										<li><a href="#"><img src="assets/images/social/instagram.png" alt="instagram_adahotel"/></a></li>
+										<li><a href="#"><img src="assets/images/social/twitter.png" alt="twitter_adahotel"/></a></li>
+									</ul>
+								</div>
+						</div>
+		</section>
 
 		</div>
 	</section>
