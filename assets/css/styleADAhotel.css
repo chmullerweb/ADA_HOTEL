@@ -1,4 +1,6 @@
-/*CSS RESET*/
+/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""CSS RESET"""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
     /* http://meyerweb.com/eric/tools/css/reset/
        v2.0 | 20110126
        License: none (public domain)
@@ -32,6 +34,7 @@
     body {
     	line-height: 1;
     }
+
     ol, ul {
     	list-style: none;
     }
@@ -48,11 +51,16 @@
     	border-spacing: 0;
     }
 
-/*POLICE*/
-* {
+/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""POLICE"""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
+
+#bloc_page {
   color: #140D04;
-  font-family: 'times new roman';
+  font-family: Georgia, serif;
   font-size: 1em;
+  /*margin-left: 200px;
+  margin-right: 200px;*/
 }
 
 nav a, .text_footer a, h2, h1 {
@@ -68,7 +76,14 @@ h3{
   font-size: 1.2em;
 }
 
-/*BACKGROUND*/
+#adahotel{
+  font-family: 'Lobster', cursive;
+}
+
+/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""BACKGROUND"""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
+
 
 #bloc_page{
   background-color: white;
@@ -96,6 +111,7 @@ nav ul{
 nav a{
   text-decoration: none;
   font-size: 1.1em;
+  color: #140D04;
 }
 
 nav a:hover{
@@ -148,41 +164,79 @@ nav a:hover{
   border: 2px;
   border-radius: 3px;
   color: #140D04;
+  height: 45px;
+
 }
 
 .button_book h2{
   text-align: center;
   justify-content: middle;
-  padding: 4px;
+  padding: 8px;
   margin-top: 3px;
-  margin-bottom: 0px;
 }
 
-/*AGENDA SEJOUR*/
+/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""AGENDA HOME"""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
+
 
 .agenda{
   background-color: rgba(115, 158, 130, 0.4);
   display: flex;
   justify-content: space-around;
   padding: auto;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
   margin-top: 5px;
+  align-items: center;
+  height: 50px;
+}
 
+#calendar{
+  width: 50px;
+  height: 50px;
 }
 
 input[type=date]{
   background-color: rgba(240,234, 216);
   text-align: right;
+  font-family: 'Lobster Two', cursive;
+  width: 200px;
+  height: 25px;
+  font-size: 1.1em;
+}
+
+label{
+  font-family: 'Lobster Two', cursive;
+  font-size: 1.2em;
+}
+
+.agenda p{
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.agenda_title{
+  line-height: 25px;
+
 }
 
 input[type=submit]{
   background-color: #140D04;
   text-align: center;
   color: white;
+  font-family: 'Lobster Two', cursive;
+  font-size: 1.1em;
+  width: 120px;
+  height: 35px;
+
 }
 
 
-/*SLIDER PHOTO*/
+/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""SLIDER PHOTO"""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
+
+
 
 .slider_photos img{
   width: 300px;
@@ -194,7 +248,9 @@ input[type=submit]{
   border-radius: 3px;
 }
 
-/*DESCRIPTION & SERVICES*/
+/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""DESCRIPTION & SERVICES"""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
 
 #presentation{
   display: flex;
@@ -203,19 +259,127 @@ input[type=submit]{
 .description{
   width: 50%;
   padding : 4px;
-  margin: 4px;
-  margin-left: 10px;
-}
-
-.services{
-  background-color: rgba(211, 139, 93, 0.4); 211 139 93
-  width: 50%;
-  padding: 4px;
-  margin-top: 4px;
+  margin: 30px;
+  border: 3px #99621e solid;
   border-radius: 3px;
 }
 
-/*CONTACT*/
+.description h2{
+  padding-top: 17px;
+  padding-bottom: 17px;
+  text-align: center;
+}
+.description p{
+  text-align: left;
+  padding : 10px 50px 0px 50px;
+  line-height: 20px;
+  font-size: 1.2em;
+}
+
+.services{
+  background-color: rgba(211, 139, 93, 0.4);
+  width: 250px;
+  height: 420px;
+  padding: 4px;
+  margin: 30px 0px 30px 30px;
+  border-radius: 3px;
+  text-align: left;
+  padding: 17px;
+}
+
+.services li{
+  margin: 17px;
+}
+
+#puce_reception{
+  list-style-image: url(https://image.flaticon.com/icons/svg/690/690466.svg);
+  font-size: 1em;
+}
+
+#puce_staff{
+  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
+  font-size: 1em;
+}
+
+#puce_nursery{
+  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
+  font-size: 1em;
+}
+
+#puce_food{
+  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
+  font-size: 1em;
+}
+
+#puce_bed{
+  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
+  font-size: 1em;
+}
+
+#puce_activities{
+  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
+  font-size: 1em;
+}
+
+#puce_wifi{
+  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
+  font-size: 1em;
+}
+
+#puce_breakfast{
+  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
+  font-size: 1em;
+}
+
+#puce_rooftop{
+  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
+  font-size: 1em;
+}
+
+#puce_air{
+  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
+  font-size: 1em;
+}
+
+#puce_pets{
+  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
+  font-size: 1em;
+}
+
+
+
+
+/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""MAPS & CONTACT"""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
+#find_us{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px 30px 40px;
+
+}
+
+.hotel_infos{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  align-items: center;
+  background-color: rgba(226, 148, 52, 0.4);
+  border-radius: 8px;
+  height: 110px;
+  font-size: 1em;
+  line-height: 25px;
+}
+
+.hotel_infos h3, #adahotel{
+  font-size: 1.4;
+}
+
+.gmap_canvas{
+  border: 3px rgb(211, 139, 93) solid;
+  border-radius: 5px;
+  text-align: center;
+}
 
 .social img{
   width: 30px;
@@ -224,17 +388,20 @@ input[type=submit]{
 
 .social li{
   list-style: none;
+
 }
 
 .social {
   display: flex;
+  align-content: center;
   padding: 0px;
-  justify-content: space-between;
   width: 10%;
 
 }
 
-/*FOOTER*/
+/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""FOOTER"""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
 
 .text_footer{
   background-color:#739e82;
@@ -243,6 +410,7 @@ input[type=submit]{
 
 .text_footer li{
   list-style: none;
+  padding: 5px;
 }
 
 
@@ -257,6 +425,7 @@ input[type=submit]{
 .text_footer a{
   text-decoration: none;
   font-size: 1.1em;
+  color: #140D04;
 }
 
 .text_footer a:hover{
