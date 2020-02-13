@@ -67,15 +67,22 @@
 
 nav a, .text_footer a, h2, h1 {
   font-family: 'Lobster', cursive;
+  color: #140D04;
 }
 
 h2{
   font-size: 1.6em;
+  color: #140D04;
 }
 
 h3{
   font-family: 'Lobster Two', cursive;
   font-size: 1.2em;
+  color: #140D04;
+}
+
+p, li{
+  color: #140D04;
 }
 
 #adahotel{
@@ -169,13 +176,56 @@ nav a:hover{
   margin-top: 3px;
 }
 
+/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""MAIN"""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
+
 .title_page{
   background-color: rgba(115, 158, 130, 0.4);
   text-align: center;
-  margin : 30px;
-  height: 50px;
+  margin: 30px;
+  border-bottom: 2px #739e82 solid;
   border-radius: 5px;
 }
+
+.title_page h2{
+  vertical-align: middle;
+  padding: 10px 0px;
+}
+
+.top_title_room{
+  margin: 30px;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px #efefe5 dotted ;
+
+}
+
+.room{
+  display: flex;
+}
+
+.room_presentation {
+    border-radius: 5px 5px 5px 5px;
+    margin: 0px 30px;
+    height: 200px;
+    padding: 10px 20px;
+    background-color: #efefe5;
+    color: white;
+    font-size: 0.8em;
+    color: black;
+    line-height: 17px;
+    list-style: square;
+}
+
+.room_presentation p {
+    font-weight: bolder;
+    padding: 6px;
+}
+
+
+
 
 /*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""AGENDA HOME"""""""""""""""""""""""""""""""""
@@ -240,15 +290,15 @@ input[type=submit]{
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
 
 
-
 .slider_photos img{
   width: 300px;
 }
 
 .slider_photos{
   text-align: center;
-  border: 2px #140D04 dotted;
+  border: 2px #efefe5 dotted;
   border-radius: 3px;
+  margin: 0px 30px 30px 30px;
 }
 
 /*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -301,7 +351,7 @@ input[type=submit]{
   font-size: 0.9em;
 }
 
-.services i{
+i{
   font-size: 0.9em;
   margin : 0px 6px;
 }
