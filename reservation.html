@@ -59,7 +59,7 @@
 """"""""""""""""""""""""""""""DESCRIPTION CHAMBRES"""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
 
-<section class="room">
+<section class="room_list">
 
 	<h2>Nos chambres insolites et haut de gamme</h2>
 
@@ -67,19 +67,11 @@
 			<thead>
 					<div id="title_table">
 							<tr>
-								<th> Chambre 1 </th>
-								<th> Chambre 2 </th>
-								<th> Chambre 3 </th>
+								<th> Chambre Maribelle</th>
+								<th> Chambre Elisa </th>
+								<th> Chambre Justine </th>
 							</tr>
 				 </div>
-
-				 <div id="subtitle_table">
-					<tr>
-						<th> Maribelle </th>
-						<th> Elisa </th>
-						<th> Justine </th>
-					</tr>
-				</div>
 
 			</thead>
 
@@ -101,7 +93,7 @@
 		</table>
 </section>
 
-		<hr/>
+
 
 <!--/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""INFOS RESERVATION"""""""""""""""""""""""""""""""""""
@@ -110,44 +102,53 @@
 <section class="infos_reservation">
 		<h2>Informations sur la réservation</h2>
 
-			<h3>Choix de votre chambre</h3>
-				<form class="" action="index.html" method="post">
-					<select class="" name="Chambres">
-						<option value="Maribelle">Maribelle</option>
-						<option value="Elisa">Elisa</option>
-						<option value="Justine">Justine</option>
-					</select><br/>
-				</form>
+	<div class="items_reservation">
 
-			<h3>Dates du séjour</h3>
-				<form class="" action="index.html" method="post">
-					<label>Arrivée </label><input type="date" name="" value=""><br/>
-					<label>Départ <label><input type="date" name="" value=""><br/>
-				</form>
+				<div class="room_choice">
+						<h3>Choix de votre chambre</h3>
+						<form class="" action="index.html" method="post">
+							<select class="" name="Chambres">
+								<option value="Maribelle">Maribelle</option>
+								<option value="Elisa">Elisa</option>
+								<option value="Justine">Justine</option>
+							</select><br/>
+						</form>
+				</div>
 
-			<h3>Nombre de Voyageurs</h3>
+			<div class="room_date">
+					<h3>Dates du séjour</h3>
+						<form class="" action="index.html" method="post">
+							<p><label>Arrivée </label><input type="date" name="" value=""></p>
+							<p><label>Départ <label><input type="date" name="" value=""></p>
+						</form>
+			</div>
 
-				<form class="" action="index.html" method="post">
-					<label for="">Adultes </label><input type="number" name="" value=""><br/>
-					<label for="">Enfant de 2 à 12 ans </label><input type="number" name="" value=""><br/>
-					<label for="">Bébé -2 ans </label><input type="number" name="" value=""><br/>
-					<label for="">Animal de compagnie </label><input type="number" name="" value=""><br/>
-				</form><br/>
+			<div class="room_specifics">
+					<h3>Nombre de Voyageurs</h3>
 
-			<h3>Services</h3>
-				<form class="" action="index.html" method="post">
-					<input type="checkbox" name="services" value="" id="breakfast"><label for="breakfast" title="Veuillez vous présenter à la réception la veille pour réserver votre petit-déjeuner.">Petit-déjeuner*</label><br/>
-					<input type="checkbox" name="services" value="" id="pool"><label for="pool">Accès Piscine </label><br/>
-					<input type="checkbox" name="services" value="" id="parking"><label for="parking">Parking </label><br/>
-					<input type="checkbox" name="services" value="" id="nursery"><label for="nursery">Garderie </label><br/>
-					<input type="checkbox" name="services" value="" id="petsitter"><label for="petsitter">Petsitter </label><br/>
+						<form class="" action="index.html" method="post">
+							<p><label for="">Adultes</label><input type="number" name="" value=""></p>
+							<p><label for="">Enfant de 2 à 12 ans</label><input type="number" name="" value=""></p>
+							<p><label for="">Bébé -2 ans</label><input type="number" name="" value=""></p>
+							<p><label for="">Animal de compagnie</label><input type="number" name="" value=""></p>
+						</form>
+			</div>
 
-				</form><br/>
+			<div class="room_services">
+					<h3>Services</h3>
+						<form class="checkbox" action="index.html" method="post">
+							<input type="checkbox" name="services" value="" id="breakfast"><label for="breakfast" title="Veuillez vous présenter à la réception la veille pour réserver votre petit-déjeuner.">Petit-déjeuner*</label><br/>
+							<input type="checkbox" name="services" value="" id="pool"><label for="pool">Accès Piscine </label><br/>
+							<input type="checkbox" name="services" value="" id="parking"><label for="parking">Parking </label><br/>
+							<input type="checkbox" name="services" value="" id="nursery"><label for="nursery">Garderie </label><br/>
+							<input type="checkbox" name="services" value="" id="petsitter"><label for="petsitter">Petsitter </label><br/>
+						</form>
 
+			</div>
+	</div>
 
 </section>
 
-		<hr/>
 
 	<!--/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 	""""""""""""""""""""""""""""""INFOS PERSONNELLES"""""""""""""""""""""""""""""""""""
@@ -156,11 +157,11 @@
 <section class="infos_private">
 
 
-		<h2> Informations personnelles</h2>
+		<h2>Informations personnelles</h2>
 			<form class="" action="index.html" method="post">
 				<div id="identity">
 					<input type="text" name="" value="" placeholder="Votre Nom">
-					<input type="text" name="" value="" placeholder="Votre Prénom"><br/><br/>
+					<input type="text" name="" value="" placeholder="Votre Prénom">
 				</div>
 
 				<div id="gender">
@@ -170,8 +171,8 @@
 				</div>
 		<br/>
 
-					<label>Numéro de téléphone :</label> <input type="number" name="" value=""><br/>
-					<label>Votre email :</label><input type="email" name="" value="" placeholder="contact@gmail.com"><br/><br/>
+					<label>Numéro de téléphone : </label> <input type="tel" name="" value=""><br/>
+					<label>Votre email : </label><input type="email" name="" value="" placeholder="contact@gmail.com"><br/><br/>
 
 					<label>Un commentaire à nous partager ? </label><br/>
 					<textarea class="formular" name="name" rows="2" cols="100">Je serais ravi(e) de séjourner chez vous !</textarea><br/>

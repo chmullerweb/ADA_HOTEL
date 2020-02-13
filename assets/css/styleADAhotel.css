@@ -27,9 +27,9 @@
     	vertical-align: baseline;
     }
     /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure,
+    /*article, aside, details, figcaption, figure,
     footer, header, hgroup, menu, nav, section {
-    	display: block;
+    	 display: block; */
     }
     body {
     	line-height: 1;
@@ -229,9 +229,105 @@ nav a:hover{
 """"""""""""""""""""""""""""""MAIN RESERVATION"""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
 
-#room, #infos_private, #infos_reservation{
+.infos_private, .infos_reservation{
+  display: flex;
   justify-content: center;
 }
+
+.infos_reservation{
+border-bottom: 1.5px #E29434 dotted;
+}
+
+.room_list{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 25px;
+  border-bottom: 1.5px #E29434 dotted;
+  margin: 30px;
+  padding-bottom: 30px;
+}
+
+th{
+  font-weight: bolder;
+  padding: 25px 0px 2px 0px;
+}
+
+.infos_private h2{
+  width: 30%;
+}
+
+.infos_reservation h2{
+  width: 30%;
+}
+
+.items_reservation{
+  flex-direction: column;
+  line-height: 25px;
+  margin-left: 30px;
+  line-height: 40px;
+}
+
+select{
+background-color: rgba(240,234, 216);
+font-family: 'Lobster Two', cursive;
+width: 170px;
+height: 25px;
+font-size: 1em;
+margin: 10px;
+}
+
+.room_choice, .room_date, .room_services, .room_specifics {
+  border-bottom: 1.5px #efefe5 solid ;
+  margin-bottom: 20px;
+}
+
+.items_reservation p, .items_reservation label{
+  font-size: 1em;
+  padding-right: 8px;
+  padding-left: 8px;
+
+}
+
+.infos_private{
+  margin: 30px;
+  line-height: 25px;
+}
+
+.infos_reservation input[type=date], input[type=text], input[type=number], input[type=email], input[type=tel]{
+  background-color: rgba(240,234, 216);
+  text-align: right;
+  font-family: 'Lobster Two', cursive;
+  width: 170px;
+  height: 20px;
+  font-size: 0.9em;
+  margin-left: 8px;
+}
+
+textarea{
+    background-color: rgba(240,234, 216);
+    width: 600px;
+    height: 100px;
+    font-size: 1em;
+}
+
+#gender{
+  margin-top: 15px;
+}
+
+.checkbox{
+  margin-left: 8px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""AGENDA HOME"""""""""""""""""""""""""""""""""
@@ -361,63 +457,6 @@ i{
   font-size: 0.9em;
   margin : 0px 6px;
 }
-
-#puce_reception{
-  list-style-image: url(https://image.flaticon.com/icons/svg/690/690466.svg);
-  font-size: 1em;
-}
-
-#puce_staff{
-  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
-  font-size: 1em;
-}
-
-#puce_nursery{
-  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
-  font-size: 1em;
-}
-
-#puce_food{
-  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
-  font-size: 1em;
-}
-
-#puce_bed{
-  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
-  font-size: 1em;
-}
-
-#puce_activities{
-  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
-  font-size: 1em;
-}
-
-#puce_wifi{
-  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
-  font-size: 1em;
-}
-
-#puce_breakfast{
-  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
-  font-size: 1em;
-}
-
-#puce_rooftop{
-  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
-  font-size: 1em;
-}
-
-#puce_air{
-  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
-  font-size: 1em;
-}
-
-#puce_pets{
-  list-style-image: url(https://image.flaticon.com/icons/svg/1023/1023656.svg);
-  font-size: 1em;
-}
-
-
 
 
 /*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
