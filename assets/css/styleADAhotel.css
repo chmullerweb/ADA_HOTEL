@@ -89,6 +89,8 @@ h3{
 nav{
   background-color:#739e82;
   height: 30px;
+  border-bottom: 4px #E29434 solid;
+
 }
 
 nav li{
@@ -99,7 +101,6 @@ nav ul{
     display: flex;
     justify-content: space-around;
     padding: 5px 0px;
-    border-bottom: 4px #E29434 solid;
 }
 
 nav a{
@@ -472,7 +473,18 @@ input[type=submit]{
                 /* Extra small devices (phones, 600px and down) */
                 @media only screen and (max-width: 600px) {
 
-                  
+                      nav ul{
+                        flex-direction: column;
+                        margin-left: 10px;
+                        font-size: 0.8em;
+                        line-height: 17px;
+                      }
+
+                      nav{
+                        width: 30%;
+                        height: 20%;
+                      }
+                      }
                         /* Small devices (portrait tablets and large phones, 600px and up) */
                         @media only screen and (min-width: 600px) {...}
 
