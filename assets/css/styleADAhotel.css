@@ -219,7 +219,7 @@ nav a:hover{
     list-style: square;
 }
 
-.room_presentation p {
+.room_presentation p, .services_presentation p {
     font-weight: bolder;
     padding: 6px;
 }
@@ -320,10 +320,23 @@ textarea{
 }
 
 
+/*"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""MAIN SERVICES""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""*/
 
 
-
-
+.services_presentation {
+    border-radius: 5px 5px 5px 5px;
+    margin: 30px 30px;
+    height: 100%;
+    padding: 10px 20px;
+    background-color: #d38b5d;
+    color: white;
+    font-size: 0.8em;
+    color: black;
+    line-height: 17px;
+    list-style: square;
+}
 
 
 
