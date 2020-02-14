@@ -120,6 +120,12 @@ nav a:hover{
 }
 
 
+.button_book a{
+  text-decoration: none;
+  color: #140D04;
+}
+
+
 .cover{
   margin-top: 10px;
   background-image: url(../images/hotel/adahotel_1.jpg);
